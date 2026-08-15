@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "id": "hihw2",
-  "version": "${version}",
-  "name": "User me w2",
+  "version": "${1.2}",
+  "name": "CAT",
   "description": "Клиентские HUD-модули и косметика для Minecraft 1.21.3 (Fabric).",
-  "authors": ["HiH"],
+  "authors": ["LESVAN"],
   "contact": {},
   "license": "MIT",
   "icon": "assets/hihw2/icon.png",
