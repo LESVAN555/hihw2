@@ -61,7 +61,13 @@ public class HihW2Screen extends Screen {
                     button.setMessage(Text.literal("HUD Overlay: " + (HudManager.hudEnabled ? "ON" : "OFF")));
                 }
         ).dimensions(centerX - 100, 60, 200, 20).build());
-    }
+    this.addDrawableChild(ButtonWidget.builder(
+                Text.literal("Cape: " + (CosmeticManager.capeEnabled ? "ON" : "OFF")),
+                button -> {
+                    CosmeticManager.capeEnabled = !CosmeticManager.capeEnabled;
+                    button.setMessage(Text.literal("Cape: " + (CosmeticManager.capeEnabled ? "ON" : "OFF")));
+                }
+        ).dimensions(centerX - 100, 85, 200, 20).build());}
 
     private void buildPlayerTab(int centerX) {
         MinecraftClient client = MinecraftClient.getInstance();
