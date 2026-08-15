@@ -1,7 +1,9 @@
 plugins {
 	id 'fabric-loom' version '1.7-SNAPSHOT'
 	id 'maven-publish'
-}loom {
+}
+
+loom {
     mixin {
         defaultRefmapName.set("hihw2.refmap.json")
     }
