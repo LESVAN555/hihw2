@@ -45,6 +45,8 @@ public class HihW2Client implements ClientModInitializer {
                 "category.hihw2"
         ));
 
+        CosmeticManager.register();
+
         HudRenderCallback.EVENT.register((drawContext, tickCounter) -> {
             HudManager.render(drawContext, tickCounter);
             CrosshairRenderer.render(drawContext);
