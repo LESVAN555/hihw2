@@ -5,7 +5,7 @@
   "client": [
     
    "InGameHudMixin",
-    "PlayerRendererMixin"
+    
   ],
   "injectors": {
     "defaultRequire": 1
