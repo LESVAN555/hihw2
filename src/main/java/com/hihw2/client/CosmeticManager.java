@@ -38,7 +38,7 @@ public final class CosmeticManager {
             double pz = player.getZ() - camPos.z;
 
             matrices.push();
-            matrices.translate(px, py + 1.0, pz);
+            matrices.translate(px, py + 1.5, pz);
             matrices.multiply(net.minecraft.util.math.RotationAxis.POSITIVE_Y.rotationDegrees(-player.getYaw()));
             matrices.translate(0, 0, 0.15);
 
