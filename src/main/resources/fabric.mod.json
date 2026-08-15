@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "hihw2",
   "version": "${version}",
-  "name": "HiH w2",
+  "name": "User me w2",
   "description": "Клиентские HUD-модули и косметика для Minecraft 1.21.3 (Fabric).",
   "authors": ["HiH"],
   "contact": {},
@@ -14,7 +14,7 @@
       "com.hihw2.client.HihW2Client"
     ]
   },
-  "mixins": [],
+  "mixins": ["hihw2.mixins.json"],
   "depends": {
     "fabricloader": ">=0.16.9",
     "fabric-api": "*",
