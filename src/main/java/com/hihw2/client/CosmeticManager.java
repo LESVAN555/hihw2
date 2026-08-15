@@ -40,7 +40,7 @@ public final class CosmeticManager {
             matrices.push();
             matrices.translate(px, py + 1.5, pz);
             matrices.multiply(net.minecraft.util.math.RotationAxis.POSITIVE_Y.rotationDegrees(-player.getYaw()));
-            matrices.translate(0, 0, -0.15);
+            matrices.translate(0, 0, -0.17);
 
             var vc = immediate.getBuffer(RenderLayer.getEntityCutout(TEXTURE));
             var entry = matrices.peek();
