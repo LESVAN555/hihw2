@@ -132,8 +132,9 @@ public class HihW2Screen extends Screen {
           }
     
         private static final net.minecraft.util.Identifier CAT_TEXTURE =
- net.minecraft.util.Identifier.of("hihw2", "cat.png");
-
+    net.minecraft.util.Identifier.of("hihw2", "textures/gui/cat.png");private static final net.minecraft.util.Identifier CAT_TEXTURE =
+    
+    net.minecraft.util.Identifier.of("hihw2", "textures/gui/cat.png");
     @Override
     public void render(DrawContext context, int mouseX, int mouseY, float delta) {
         this.renderBackground(context, mouseX, mouseY, delta);
