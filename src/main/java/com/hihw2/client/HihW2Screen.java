@@ -129,26 +129,6 @@ public class HihW2Screen extends Screen {
                 button -> {}
         ).dimensions(centerX - 100, 85, 200, 20).build());
     }
-    
-    @Override
-    public void render(DrawContext context, int mouseX, int mouseY, float delta) {
-        this.renderBackground(context, mouseX, mouseY, delta);
-        drawCat(context);
-        super.render(context, mouseX, mouseY, delta);
-        context.drawCenteredTextWithShadow(this.textRenderer, this.title, this.width / 2, 8, 0xFFFFFF);
-    }
-
-    private void drawCat(DrawContext context) {
-        int catColor = 0xFFFFCC33;
-        int centerX = this.width / 2;
-        int bodyY = this.height - 120;
-
-        context.fill(centerX - 60, bodyY, centerX + 60, bodyY + 80, catColor);
-        context.fill(centerX - 40, bodyY - 50, centerX + 40, bodyY, catColor);
-        context.fill(centerX - 50, bodyY - 40, centerX - 40, bodyY - 20, catColor);
-        context.fill(centerX + 40, bodyY - 40, centerX + 50, bodyY - 20, catColor);
-        context.fill(centerX + 55, bodyY + 20, centerX + 110, bodyY + 30, catColor);
-    }
 
     
     @Override
