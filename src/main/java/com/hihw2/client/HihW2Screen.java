@@ -132,7 +132,7 @@ public class HihW2Screen extends Screen {
           }
     
         private static final net.minecraft.util.Identifier CAT_TEXTURE =
- net.minecraft.util.Identifier.of("hihw2", "foni-papik-pro-0c7d-p-kartinki-kot-iz-mainkrafta-na-prozrachnom-2.png");
+ net.minecraft.util.Identifier.of("hihw2", "cat.png");
 
     @Override
     public void render(DrawContext context, int mouseX, int mouseY, float delta) {
