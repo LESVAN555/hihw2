@@ -129,7 +129,13 @@ public class HihW2Screen extends Screen {
                 button -> {}
         ).dimensions(centerX - 100, 85, 200, 20).build());
     }
-
+    
+@Override
+    public void render(DrawContext context, int mouseX, int mouseY, float delta) {
+        this.renderBackground(context, mouseX, mouseY, delta);
+        super.render(context, mouseX, mouseY, delta);
+        context.drawCenteredTextWithShadow(this.textRenderer, this.title, this.width / 2, 8, 0xFFFFFF);
+    }
     
     @Override
     public boolean shouldPause() {
