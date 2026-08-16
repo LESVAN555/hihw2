@@ -143,6 +143,19 @@ private static final net.minecraft.util.Identifier CAT_TEXTURE =
         super.render(context, mouseX, mouseY, delta);
         context.drawCenteredTextWithShadow(this.textRenderer, this.title, this.width / 2, 8, 0xFFFFFF);
     }
+
+    @Override
+    public void render(DrawContext context, int mouseX, int mouseY, float delta) {
+        this.renderBackground(context, mouseX, mouseY, delta);
+
+        int imgSize = 200;
+        int x = this.width / 2 - imgSize / 2;
+        int y = this.height / 2 - imgSize / 2;
+        context.drawTexture(CAT_TEXTURE, x, y, 0, 0, imgSize, imgSize, imgSize, imgSize);
+
+        super.render(context, mouseX, mouseY, delta);
+        context.drawCenteredTextWithShadow(this.textRenderer, this.title, this.width / 2, 8, 0xFFFFFF);
+    }
     
     @Override
     public boolean shouldPause() {
